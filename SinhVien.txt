@@ -1,4 +1,0 @@
-SV01,Nhat,Cntt,5/12/2002,nữ
-SV01,Nhat,Cntt,5/12/2002,nữ
-SV01,Nhat,Cntt,5/12/2002,nam
-1,2,3,4,nam

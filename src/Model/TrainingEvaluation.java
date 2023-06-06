@@ -7,7 +7,7 @@ package Model;
 
 /**
  *
- * @author Nguyen Hong Phong
+ * 
  */
 
 public class TrainingEvaluation {

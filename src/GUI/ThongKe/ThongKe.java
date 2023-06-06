@@ -5,8 +5,8 @@
 package GUI.ThongKe;
 
 import GUI.Home;
-import Model.Khoa;
-import Model.SinhVien;
+import Model.QueQuan;
+import Model.DanCu;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Đặng Huy
+ * 
  */
 public class ThongKe extends javax.swing.JFrame {
 
@@ -456,8 +456,8 @@ public class ThongKe extends javax.swing.JFrame {
         double Tl9 = 0;
         String kt = "";
         try {
-            ArrayList<Khoa> listNH = NHFromFile();
-            ArrayList<SinhVien> listSV = SVFromFile();
+            ArrayList<QueQuan> listNH = NHFromFile();
+            ArrayList<DanCu> listSV = SVFromFile();
             for (int i = 0; i < listSV.size(); i++) {
                 d9++;
                 kt = listSV.get(i).getKhoa();
@@ -535,12 +535,12 @@ public class ThongKe extends javax.swing.JFrame {
             System.out.println(ex.toString());
         }
     }//GEN-LAST:event_tbnTkActionPerformed
-    private ArrayList<SinhVien> SVFromFile() throws FileNotFoundException {
-        ArrayList<SinhVien> listSV = new ArrayList<SinhVien>();
+    private ArrayList<DanCu> SVFromFile() throws FileNotFoundException {
+        ArrayList<DanCu> listSV = new ArrayList<DanCu>();
         try {
-            BufferedReader read = new BufferedReader(new FileReader("src/FileData/SinhVien.txt"));
+            BufferedReader read = new BufferedReader(new FileReader("src/FileData/DanCu.txt"));
             String line;
-            SinhVien SV = null;
+            DanCu SV = null;
             while ((line = read.readLine()) != null) {
                 String[] sv = line.split(",");
                 String MSV1 = sv[0].trim();
@@ -548,7 +548,7 @@ public class ThongKe extends javax.swing.JFrame {
                 String Nganh1 = sv[2].trim();
                 String NgaySinh1 = sv[3].trim();
                 String GioiTinh1 = sv[4].trim();
-                SV = new SinhVien(MSV1, Ten1, Nganh1, NgaySinh1, GioiTinh1);
+                SV = new DanCu(MSV1, Ten1, Nganh1, NgaySinh1, GioiTinh1);
                 listSV.add(SV);
             }
         } catch (FileNotFoundException ex) {
@@ -560,16 +560,16 @@ public class ThongKe extends javax.swing.JFrame {
         return listSV;
     }
 
-    private ArrayList<Khoa> NHFromFile() throws FileNotFoundException {
-        ArrayList<Khoa> listMH = new ArrayList<Khoa>();
+    private ArrayList<QueQuan> NHFromFile() throws FileNotFoundException {
+        ArrayList<QueQuan> listMH = new ArrayList<QueQuan>();
         try {
-            BufferedReader read = new BufferedReader(new FileReader("src/FileData/Khoa.txt"));
+            BufferedReader read = new BufferedReader(new FileReader("src/FileData/QueQuan.txt"));
             String line;
-            Khoa NH = null;
+            QueQuan NH = null;
             while ((line = read.readLine()) != null) {
                 String[] mh = line.split(",");
                 String NH1 = mh[0].trim();
-                NH = new Khoa(NH1);
+                NH = new QueQuan(NH1);
                 listMH.add(NH);
             }
         } catch (FileNotFoundException ex) {

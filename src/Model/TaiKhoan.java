@@ -6,7 +6,7 @@ package Model;
 
 /**
  *
- * @author Đặng Huy
+ * 
  */
 public class TaiKhoan {
     private String tenTaiKhoan;

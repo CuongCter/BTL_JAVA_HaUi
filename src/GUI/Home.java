@@ -4,9 +4,9 @@
  */
 package GUI;
 
-import GUI.DanhGiaSV.DANHGIASCREEN;
-import GUI.QuanLyKTX.GUIQuanLyKyTucXa;
-import GUI.QuanLyLichThi.QuanLyLichThi;
+import GUI.DanhGia.DANHGIASCREEN;
+import GUI.QuanLyKhuDanCu.GUIQuanKhuChungCu;
+import GUI.QuanLyThongBao.QuanLyThongBao;
 import GUI.ThongKe.ThongKe;
 import java.io.FileNotFoundException;
 import java.util.logging.Level;
@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Đặng Huy
+ * 
  */
 public class Home extends javax.swing.JFrame {
 
@@ -130,18 +130,18 @@ public class Home extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSinhVienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSinhVienActionPerformed
-        new QuanLySinhVien().setVisible(true);
+        new QuanLyDanCu().setVisible(true);
         dispose();
     }//GEN-LAST:event_btnSinhVienActionPerformed
 
     private void btnLichThiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLichThiActionPerformed
-        new QuanLyLichThi().setVisible(true);
+        new QuanLyThongBao().setVisible(true);
         dispose();
     }//GEN-LAST:event_btnLichThiActionPerformed
 
     private void btnKTXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKTXActionPerformed
         try {
-            new GUIQuanLyKyTucXa().setVisible(true);
+            new GUIQuanKhuChungCu().setVisible(true);
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
         }

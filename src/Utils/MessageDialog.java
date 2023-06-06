@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author DELL
+ * 
  */
 public class MessageDialog {
     public static void showMessage(Component parent,String content,String title){

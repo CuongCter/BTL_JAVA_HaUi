@@ -1,0 +1,16 @@
+CD1, Nguyễn Văn A,42,Yếu
+CD2, Phạm Văn B,0,null
+CD3, Lê Văn C,0,null
+CD4,Nguyễn Thị C,0,null
+CD5,Hoàng Mạnh JNM,0,null
+CD6,Lê Công E,0,null
+CD7,Trần Thị Trà F,0,null
+CD8,Lê Công G,0,null
+CD9,Lê Công H,0,null
+CD10,Phạm Văn I,0,null
+CD11,Đoàn Thị K,0,null
+CD12,Nguyễn Thị Minh,0,null
+CD13,Phạm Văn M,0,null
+CD14,Phạm Văn J,0,null
+CD15,Phạm Văn j,0,null
+CD16,Phạm Văn V,0,null

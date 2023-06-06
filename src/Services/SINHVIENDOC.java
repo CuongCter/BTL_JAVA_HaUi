@@ -1,7 +1,7 @@
 package Services;
 
-import Model.DANHGIASINHVIEN;
-import Model.SinhVien;
+import Model.DanhGia;
+import Model.DanCu;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -11,12 +11,12 @@ import java.util.List;
 
 
 public class SINHVIENDOC {
-    public List<DANHGIASINHVIEN> list;
-    public void ghifile(List<DANHGIASINHVIEN> list){
+    public List<DanhGia> list;
+    public void ghifile(List<DanhGia> list){
     try {
-                        FileWriter fw = new FileWriter("src/FileData/DanhGiaSinhVien.txt");
+                        FileWriter fw = new FileWriter("src/FileData/DanhGia.txt");
                         BufferedWriter bw = new BufferedWriter(fw);
-                        for(DANHGIASINHVIEN sv:list){
+                        for(DanhGia sv:list){
                             bw.write(sv.toString());
                             bw.newLine();
                         }
@@ -26,10 +26,10 @@ public class SINHVIENDOC {
                         System.out.println("Loi ghi file " + e.getMessage());
                 }
 }
-    public List<SinhVien> docfile(){
+    public List<DanCu> docfile(){
             try {
-            List<SinhVien> list=new ArrayList<>();
-            FileReader fr=new FileReader("src/FileData/SinhVien.txt");
+            List<DanCu> list=new ArrayList<>();
+            FileReader fr=new FileReader("src/FileData/DanCu.txt");
             BufferedReader br=new BufferedReader(fr);
             String line="";
             while(true){
@@ -38,7 +38,7 @@ public class SINHVIENDOC {
                     break;
                 }
                 String txt[]=line.split(",");
-                list.add(new SinhVien(txt[0],txt[1] , txt[2], txt[3], txt[4]));
+                list.add(new DanCu(txt[0],txt[1] , txt[2], txt[3], txt[4]));
             }
                 
             return list;
@@ -47,10 +47,10 @@ public class SINHVIENDOC {
         }
         return null;
     }
-    public List<DANHGIASINHVIEN> docfiledg(){
+    public List<DanhGia> docfiledg(){
             try {
-            List<DANHGIASINHVIEN> list = new ArrayList<>();
-            FileReader fr=new FileReader("src/FileData/DanhGiaSinhVien.txt");
+            List<DanhGia> list = new ArrayList<>();
+            FileReader fr=new FileReader("src/FileData/DanhGia.txt");
             BufferedReader br=new BufferedReader(fr);
             String line="";
             while(true){
@@ -59,7 +59,7 @@ public class SINHVIENDOC {
                     break;
                 }
                 String txt[]=line.split(",");System.out.println(txt[3]);
-                list.add(new DANHGIASINHVIEN(txt[0],txt[1] , Integer.parseInt(txt[2]), txt[3]));
+                list.add(new DanhGia(txt[0],txt[1] , Integer.parseInt(txt[2]), txt[3]));
             }
                 System.out.println(list);
             return list;

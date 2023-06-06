@@ -1,0 +1,19 @@
+Tổng vệ sinh,vệ sinh,06/06/2023,a,a,A,1
+CD1
+
+Giao lưu văn nghệ,Ca múa,05/06/2023,14h,UBND,NHÀ VĂN HÓA,2
+CD1
+CD4
+
+Đánh giá thường xuyên,Họp đánh giá,06/06/2023,20h,Tổ dân phố,A1,0
+
+Họp dân cư,Ca Múa,06/06/2023,12h,UBND,NHÀ VĂN HÓA,0
+
+Họp dân cư,Họp,07/06/2023,20h,UBND,NHÀ VĂN HÓA,1
+CD4
+
+Đánh giá thường xuyên,Họp,07/06/2023,8h,Khu phố,A1,3
+CD5
+CD6
+CD7
+
