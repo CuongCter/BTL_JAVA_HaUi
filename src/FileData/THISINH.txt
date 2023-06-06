@@ -1,0 +1,12 @@
+SV1, Nguyễn Văn A, CNTT, 01/01/2002, Nam
+SV2, Nguyễn Văn B, CNTT, 01/01/2002, Nam
+SV3, Nguyễn Thị C, CNTT, 01/01/2002, Nữ
+SV4, Nguyễn Văn D, CNTT, 01/01/2002, Nam
+SV5, Nguyễn Thị E, CNTT, 01/01/2002, Nữ
+SV6, Nguyễn Văn F, Ngôn ngữ Trung, 01/01/2002, Nam
+SV7, Nguyễn Thị G, Ngôn ngữ Anh, 01/01/2002, Nữ
+SV8, Nguyễn Văn H, QLKD, 01/01/2002, Nam
+SV9, Nguyễn Thị I, Ngôn ngữ Trung, 01/01/2002, Nữ
+SV10, Nguyễn Thị K, Ngôn ngữ Trung, 01/01/2002, Nữ
+SV11, Nguyễn Văn L, Ngôn ngữ Trung, 01/01/2002, Nam
+SV12, Nguyễn Thị M, Ngôn ngữ Trung, 01/01/2002, Nữ
